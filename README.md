@@ -20,7 +20,6 @@ If that doesn't work for you, check [discord.py's GitHub repo](https://github.co
 7. Get a Riot **API key** from [here](https://developer.riotgames.com/docs/api-keys)
 
 8. Rename `credentials.json.template` to `credentials.json` and replace these values:
-
 | Value                 | Replace it with                           |
 | --------------------- | ----------------------------------------- |
 | `YOUR_DISCORD_TOKEN`  | the discord **token** you got at step 6   |
