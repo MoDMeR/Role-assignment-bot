@@ -28,8 +28,28 @@ If that doesn't work for you, check [discord.py's GitHub repo](https://github.co
 
 9. Run the bot.py script: `python3.5 bot.py`
 
-10. Add the bot to your server by visiting this link (replace `YOUR_CLIENT_ID` with the **client id** you got at step 6):  
+10. Add the following roles (all **uppercase and in that order**) to your server:
+    
+    | Role          | Display role members separately from online members   |
+    | ------------- | ----------------------------------------------------- |
+    | CHALLENGER    | ✗                                                     |
+    | MASTER        | ✗                                                     |
+    | DIAMOND       | ✗                                                     |
+    | PLATINUM      | ✗                                                     |
+    | GOLD          | ✗                                                     |
+    | SILVER        | ✗                                                     |
+    | BRONZE        | ✗                                                     |
+    | UNRANKED      | ✗                                                     |
+    | TOP           | ✓                                                     |
+    | MID           | ✓                                                     |
+    | JUNGLE        | ✓                                                     |
+    | ADC           | ✓                                                     |
+    | SUPPORT       | ✓                                                     |
+    
+11. Add the bot to your server by visiting this link (replace `YOUR_CLIENT_ID` with the **client id** you got at step 6):  
 [https://discordapp.com/oauth2/authorize?&client\_id=`YOUR_CLIENT_ID`&scope=bot&permissions=469773312](https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID&scope=bot&permissions=469773312)
+
+12. Go to your server settings, and move the "Best bot EUNE" role to the top of the list
 
 ### Usage
 You can send `!help` on any Discord text channel and the bot will reply with a help message.
