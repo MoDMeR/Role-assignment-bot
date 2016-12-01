@@ -1,5 +1,5 @@
-# Best bot EUNE
-A bot for the League of Legends EUNE Discord server
+# Role assignment bot
+A Discord bot to assign (EUNE) League of Legends tiers and roles
 
 ### Setting it up
 1. Make sure you have [Python 3.5](https://www.python.org/downloads/release/python-350/) (or later) installed.
@@ -10,7 +10,7 @@ If that doesn't work for you, check [discord.py's GitHub repo](https://github.co
 
 3. Create a new Discord bot by going [here](https://discordapp.com/developers/applications/me) and clicking "New Application"
 
-4. Name the bot and give it a picture (for example I called mine "Best bot EUNE" and gave it a poro blitzcrank picture)  
+4. Name the bot and give it a picture (for example I called mine "Role assignment bot" and gave it a poro blitzcrank picture)  
 ![poroblitz](poro_blitz.png)
 
 5. Click "Create Application" and then "Create a bot user"
@@ -49,7 +49,7 @@ If that doesn't work for you, check [discord.py's GitHub repo](https://github.co
 11. Add the bot to your server by visiting this link (replace `YOUR_CLIENT_ID` with the **client id** you got at step 6):  
 [https://discordapp.com/oauth2/authorize?&client\_id=`YOUR_CLIENT_ID`&scope=bot&permissions=469773312](https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID&scope=bot&permissions=469773312)
 
-12. Go to your server settings, and move the "Best bot EUNE" role to the top of the list
+12. Go to your server settings, and move the "Role assignment bot" role to the top of the list
 
 ### Usage
 You can send `!help` on any Discord text channel and the bot will reply with a help message.
@@ -60,4 +60,9 @@ You can send `!help` on any Discord text channel and the bot will reply with a h
 | `!verify <ign>`           | Verify a high elo account (diamond or higher)     |
 
 ### License
-The MIT License, check the `LICENSE` file.
+The MIT License, check the `LICENSE` file.  
+&nbsp;  
+[Role assignment bot](https://github.com/dn0z/Role-assignment-bot) isn't endorsed by Riot Games and doesn't reflect the views or opinions 
+of Riot Games or anyone officially involved in producing or managing League of Legends. 
+League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. 
+League of Legends © Riot Games, Inc.
