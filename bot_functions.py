@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import ssl
 import json
 import string
 import random
@@ -49,11 +50,17 @@ class BotFunctions(object):
         return data
 
     @staticmethod
-    def get_remote_json_contents(json_url):
+    def get_remote_json_contents(json_url, opt_out=False):
         """
         Return the contents of a (remote) JSON file
 
+        PEP 476
+        https://www.python.org/dev/peps/pep-0476/
+
         :param json_url: the url (as a string) of the remote JSON file
+        :param opt_out: whether we want to opt out from the hostname verification
+                        (see PEP 476) or not. `True` if we want to opt out or `False`
+                        if we don't (default: `False`)
         :returns: the data of the JSON file
         """
 
@@ -61,7 +68,12 @@ class BotFunctions(object):
         req = Request(json_url)
 
         try:
-            response = urlopen(req).read()
+            if opt_out:
+                # opt out from hostname verification
+                context = ssl._create_unverified_context()
+                response = urlopen(req, context=context).read()
+            else:
+                response = urlopen(req).read()
         except HTTPError as e:
             print("HTTPError " + str(e.code))
         except URLError as e:

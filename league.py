@@ -26,7 +26,7 @@ class LeagueOfLegends(object):
         json_url = LeagueOfLegends.url_with_api_key("https://eune.api.pvp.net/api/lol/eune/v1.4/summoner/by-name/" +
                                                     summoner_name)
 
-        json_data = BotFunctions.get_remote_json_contents(json_url)
+        json_data = BotFunctions.get_remote_json_contents(json_url, opt_out=True)
         if json_data is not None:
             if summoner_name.lower() in json_data:
                 return str(json_data[summoner_name.lower()]["id"])
@@ -45,7 +45,7 @@ class LeagueOfLegends(object):
         json_url = LeagueOfLegends.url_with_api_key("https://eune.api.pvp.net/api/lol/eune/v1.4/summoner/" +
                                                     summoner_id + "/runes")
 
-        json_data = BotFunctions.get_remote_json_contents(json_url)
+        json_data = BotFunctions.get_remote_json_contents(json_url, opt_out=True)
         if json_data is not None:
             if summoner_id in json_data:
                 return [page["name"] for page in json_data[summoner_id]["pages"]]
@@ -64,7 +64,7 @@ class LeagueOfLegends(object):
         json_url = LeagueOfLegends.url_with_api_key("https://eune.api.pvp.net/api/lol/eune/v2.5/league/by-summoner/" +
                                                     summoner_id + "/entry")
 
-        json_data = BotFunctions.get_remote_json_contents(json_url)
+        json_data = BotFunctions.get_remote_json_contents(json_url, opt_out=True)
         if json_data is not None:
             if summoner_id in json_data:
                 for league in json_data[summoner_id]:
