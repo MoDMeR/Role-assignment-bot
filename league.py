@@ -23,6 +23,8 @@ class LeagueOfLegends(object):
                     or `None` if the summoner id couldn't be found
         """
 
+        summoner_name = summoner_name.lower().replace(" ", "")
+
         json_url = LeagueOfLegends.url_with_api_key("https://eune.api.pvp.net/api/lol/eune/v1.4/summoner/by-name/" +
                                                     summoner_name)
 
