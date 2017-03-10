@@ -10,8 +10,7 @@ If that doesn't work for you, check [discord.py's GitHub repo](https://github.co
 
 3. Create a new Discord bot by going [here](https://discordapp.com/developers/applications/me) and clicking "New Application"
 
-4. Name the bot and give it a picture (for example I called mine "Role assignment bot" and gave it a poro blitzcrank picture)  
-![poroblitz](poro_blitz.png)
+4. Name the bot and give it a picture (for example I called mine "Role assignment bot" and gave it a poro blitzcrank picture)
 
 5. Click "Create Application" and then "Create a bot user"
 
